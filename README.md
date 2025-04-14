@@ -19,8 +19,6 @@ f20c2-3ae8-4898-9774-5dc6f983c4fb" />
 <img width="1440" alt="Screenshot 2025-04-14 at 6 08 32 AM" src="https://github.com/user-attachments/assets/de891644-8fe9-49d8-b800-af2798bf2ae4" />
 <img width="1440" alt="Screenshot 2025-04-14 at 6 08 03 AM" src="https://github.com/user-attachments/assets/a9e1c305-f019-4350-a9c0-2ce3b822547d" />
 <img width="1440" alt="Screenshot 2025-04-14 at 6 07 46 AM" src=<img width="1440" alt="Screenshot 2025-04-14 at 6 07 43 AM" src="https://github.com/user-attachments/assets/d273ad97-f6e7-4f27-b1a9-c8250bb62be3" />
-"https://github.com/user-attachments/assets/0d30137f-b30e-4bce-add2-ddc4c0c3db0c" />
-📦 Deployment Guide (deployment-guide.md)
 
 Includes:
 	•	EC2 Launch Steps
@@ -29,4 +27,28 @@ Includes:
 	•	Generating OVPN Configs
 	•	Testing + Troubleshooting
 	•	Creating more users
+
+## 🛠️ How to Deploy (Full Guide in `deployment-guide.md`)
+
+1. Launch EC2 instance with Ubuntu 22.04 LTS
+2. Configure security group with the following rules:
+   - TCP: 22 (SSH)
+   - UDP: 51820, 1194, 500, 4500
+3. SSH into server & run OpenVPN installation script
+4. Generate `.ovpn` config file (e.g., `grandpa.ovpn`)
+5. Use config on Tunnelblick (Mac) or OpenVPN Connect (iOS)
+6. Test IP change on https://whoer.net
+
+7. 🔐 Built a personal VPN infrastructure (GrandpaVPN) using OpenVPN on AWS EC2. Configured and tested secure tunneling across iOS/macOS, set custom firewall rules, and validated anonymity using public tools. Documented and published on GitHub.
+```
+
+---
+
+## 💬 Author
+- Twitter: [@cybergrandpa](https://twitter.com/cybergrandpa)
+- GitHub: [grandpacltn](https://github.com/grandpacltn)
+
+---
+
+> “When the world spies, Grandpa masks.” 👴🔒
 
